@@ -74,10 +74,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 import os,dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse('postgres://gayratdb_user:u1Tw6SHUg6X37SB6OSVLazET3gsUNAAk@dpg-cmsgvr6ct0pc739cvat0-a.oregon-postgres.render.com/gayratdb')
 }
 
 
